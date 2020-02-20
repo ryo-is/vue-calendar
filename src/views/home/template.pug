@@ -1,41 +1,44 @@
 .home.mx-12.my-6
+  .calendar-header.d-flex
+    .week-of-day.border(v-for="item in weekOfDay", :key="item")
+      .title(:class="{'red--text': item === 'SUN', 'blue--text': item === 'SAT'}") {{ item }}
   .week-box.d-flex
-    .day-box
-    .day-box
-    .day-box
-    .day-box
-    .day-box
-    .day-box
-    .day-box
+    .day-box.border
+    .day-box.border
+    .day-box.border
+    .day-box.border
+    .day-box.border
+    .day-box.border
+    .day-box.border
   .week-box.d-flex
-    .day-box
-    .day-box
-    .day-box
-    .day-box
-    .day-box
-    .day-box
-    .day-box
+    .day-box.border
+    .day-box.border
+    .day-box.border
+    .day-box.border
+    .day-box.border
+    .day-box.border
+    .day-box.border
   .week-box.d-flex
-    .day-box
-    .day-box
-    .day-box
-    .day-box
-    .day-box
-    .day-box
-    .day-box
+    .day-box.border
+    .day-box.border
+    .day-box.border
+    .day-box.border
+    .day-box.border
+    .day-box.border
+    .day-box.border
   .week-box.d-flex
-    .day-box
-    .day-box
-    .day-box
-    .day-box
-    .day-box
-    .day-box
-    .day-box
+    .day-box.border
+    .day-box.border
+    .day-box.border
+    .day-box.border
+    .day-box.border
+    .day-box.border
+    .day-box.border
   .week-box.d-flex
-    .day-box
-    .day-box
-    .day-box
-    .day-box
-    .day-box
-    .day-box
-    .day-box
+    .day-box.border
+    .day-box.border
+    .day-box.border
+    .day-box.border
+    .day-box.border
+    .day-box.border
+    .day-box.border
