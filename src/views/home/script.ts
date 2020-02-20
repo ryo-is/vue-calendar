@@ -1,3 +1,11 @@
 import Vue from 'vue'
 
-export default Vue.extend({})
+const states = {
+  weekOfDay: ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT']
+}
+
+export default Vue.extend({
+  data() {
+    return states
+  }
+})
