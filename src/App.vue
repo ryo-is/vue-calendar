@@ -1,11 +1,11 @@
 <template lang="pug">
   v-app
-    v-card(height="48px" flat tile)
+    v-card(height="54px" flat tile)
       v-app-bar.pl-12.pr-6(
-        color="indigo darken-2" height="48px"
-        prominent dense
+        color="indigo darken-2" height="54px"
+        prominent dense absolute elevate-on-scroll scroll-target=".main-content"
       )
-    v-content
+    v-content.main-content.overflow-y-auto
       router-view
 </template>
 
@@ -45,5 +45,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+
+  .main-content {
+    height: calc(100vh - 54px);
+
+    &::-webkit-scrollbar {
+      width: 0px;
+    }
+  }
 }
 </style>
