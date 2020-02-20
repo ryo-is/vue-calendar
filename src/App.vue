@@ -1,5 +1,10 @@
 <template lang="pug">
   v-app
+    v-card(height="48px" flat tile)
+      v-app-bar.pl-12.pr-6(
+        color="indigo darken-2" height="48px"
+        prominent dense
+      )
     v-content
       router-view
 </template>
