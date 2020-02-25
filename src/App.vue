@@ -1,11 +1,12 @@
 <template lang="pug">
   v-app
-    v-card(height="54px" flat tile)
-      v-app-bar.pl-12.pr-6(
-        color="indigo darken-2" height="54px"
-        prominent dense absolute elevate-on-scroll scroll-target=".main-content"
-      )
-    v-content.main-content.overflow-y-auto
+    //- v-card(height="54px" flat tile)
+    //-   v-app-bar.pl-12.pr-6(
+    //-     color="indigo darken-2" height="54px"
+    //-     prominent dense absolute elevate-on-scroll scroll-target=".main-content"
+    //-   )
+    //- v-content.main-content.overflow-y-auto
+    v-content.main-content
       router-view
 </template>
 
@@ -46,12 +47,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
 
-  .main-content {
-    height: calc(100vh - 54px);
+  // .main-content {
+  //   height: calc(100vh - 54px);
 
-    &::-webkit-scrollbar {
-      width: 0px;
-    }
-  }
+  //   &::-webkit-scrollbar {
+  //     width: 0px;
+  //   }
+  // }
 }
 </style>
